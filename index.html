@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .pricing-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .pricing-container h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .pricing-container input[type="text"],
+        .pricing-container input[type="email"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .pricing-container input[type="button"] {
+            margin: 10px 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            width: calc(100% - 40px);
+        }
+        .pricing-container input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+        .pricing-container .payment-options {
+            margin: 20px 20px;
+        }
+        .pricing-container .payment-options h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .pricing-container .payment-options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .pricing-container .payment-options input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <h1>$297.00 AUD</h1>
+        <div>
+            <input type="text" placeholder="Coupon Code">
+            <input type="button" value="Apply">
+        </div>
+        <div>
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="payment-options">
+            <h2>PAYMENT OPTIONS</h2>
+            <label>
+                <input type="radio" name="payment" value="pay-in-full" checked>
+                Pay in Full $297
+            </label>
+            <label>
+                <input type="radio" name="payment" value="monthly-payments">
+                4 Monthly Payments of $74.25
+            </label>
+        </div>
+        <div>
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Address Line 1">
+            <input type="text" placeholder="Apt, Suite, Etc">
+        </div>
+    </div>
+</body>
+</html>
